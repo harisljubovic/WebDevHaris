@@ -1,9 +1,119 @@
 body {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    background-color: #121212;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #35475b;
+    font-size: 1rem; 
+    margin: 0 auto;
+}
+
+
+
+.borderBottomBlue {
+    border-bottom: 1px solid #35475b;
+}
+.borderBottomWhite {
+    border-bottom: 1px solid #ffffff;
+}
+/* NAVIGATION */
+
+.navHeight {
+    height: fit-content;
+    background-color: #35475b;
+}
+
+.navColor {
+    background-color: #35475b;
+}
+
+.navimg {
+    animation: myAnim 3s ease 0s infinite normal forwards;
+}
+
+.navLink {
+    width: max-content;
+    margin: 0 auto;
     font-size: 1rem;
-    font-family:'Courier New', Courier, monospace;
-    color: white;
+}
+
+.navbar-nav {
+    line-height: 2rem;
+}
+
+.linkOnHover:hover{
+   border-color: #8edcf0;
+}
+
+.navButton{
+    border: none;
+}
+
+.toggleIcon {
+    font-size: 40px;
+    color: #ffffff;
+    
+}
+
+/* HERO SECTION */
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+
+
+
+
+/********** MEDIA QUERY-s **********/
+
+@media (max-width: 1199.98px) {
+ 
+}
+
+@media (max-width: 991.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+    .linkOnHover{
+        border-bottom: 1px solid #ffffff;
+        border-radius: 0px;
+    }
+    
+   
+  
+    
+}
+
+@media (max-width: 575.98px) {
+   
+
+    #hero-section{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/bg-phone-hero.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navItemPadd {
+        padding-bottom: 10px;
+    }
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
