@@ -15,6 +15,11 @@ body {
 .borderBottomWhite {
     border-bottom: 1px solid #ffffff;
 }
+
+.textJustify {
+    text-align: center;
+    word-spacing: 2px;
+}
 /* NAVIGATION */
 
 .navHeight {
@@ -54,30 +59,99 @@ body {
     
 }
 
+.dropMenu {
+    background-color: #35475b;
+    border: none;
+}
+
+
+.dropMenu a {
+    color: white;
+    text-align: center;
+    
+}
 /* HERO SECTION */
 
 #hero-section{
     width: 100%;
-    height: 100vh;
-    background-image: url(./img/bg-hero.png);
+    height: 90vh;
+    background-image: url(./img/proba1.jpg);    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+}
+
+.heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.heroSecTxt1{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.heroSecTxt2{
+    animation: myAnim 2.5s ease 0s 1 normal forwards;
+}
+.heroSecTxt3{
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+.heroIcon {
+    color: #8edcf0;
+    font-size: 4rem;
 }
 
 
+
+/* MAIN PAGE SEC */
+
+#mainPageSec{
+    height: 100vh;
+}
+
+#mainPageSec{
+    height: max-content;
+}
+
+#quoteLine {
+    background-color: #8edcf0;
+    height: fit-content;
+    color: #35475b;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
 
 
 
 /********** MEDIA QUERY-s **********/
 
 @media (max-width: 1199.98px) {
- 
+    .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
+        font-size: 3rem;
+    }
+   
 }
 
 @media (max-width: 991.98px) {
     
+    .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
+        font-size: 2rem;
+    }
+
+    #quoteLine {
+        
+        font-size: 1.6rem
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -86,34 +160,50 @@ body {
         border-radius: 0px;
     }
     
+    #hero-section{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        }
+    
+       
+        .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
+            font-size: 2rem;
+            margin: 50px 0 50px 0;
+        }
    
-  
+        #quoteLine {
+            font-size: 1rem
+        }
     
 }
 
 @media (max-width: 575.98px) {
    
-
     #hero-section{
-        width: 100%;
-        height: 100vh;
-        background-image: url(./img/bg-phone-hero.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+       background-position: right;
+        height: max-content;
+      
     }
+ 
 
     .navItemPadd {
         padding-bottom: 10px;
     }
+
+    
+   
+   
 }
 
 @keyframes myAnim {
 	0% {
-		transform: scale(0);
+		opacity: 0;
+		transform: scale(0.6);
 	}
 
 	100% {
+		opacity: 1;
 		transform: scale(1);
 	}
 }
