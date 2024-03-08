@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #35475b;
+    background-color: #212222;
     font-size: 1rem; 
     margin: 0 auto;
 }
@@ -10,7 +10,7 @@ body {
 
 
 .borderBottomBlue {
-    border-bottom: 1px solid #35475b;
+    border-bottom: 1px solid #8edcf0;
 }
 .borderBottomWhite {
     border-bottom: 1px solid #ffffff;
@@ -24,11 +24,11 @@ body {
 
 .navHeight {
     height: fit-content;
-    background-color: #35475b;
+    background-color: #212222;
 }
 
 .navColor {
-    background-color: #35475b;
+    background-color: #212222;
 }
 
 .navimg {
@@ -60,7 +60,7 @@ body {
 }
 
 .dropMenu {
-    background-color: #35475b;
+    background-color: #212222;
     border: none;
 }
 
@@ -80,33 +80,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 25px 0 25px;
+    
 }
 
-.heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
-    width: auto;
-    text-align: center;
-    color: white;
+.dobrodosli {
+    font-size: 10rem;
+    animation: dobrodosli 3s ease 0s 1 normal forwards;
+    
+}
+
+.heroText {
     font-size: 4rem;
-    color: rgb(255, 255, 255);
+    
 }
 
-.heroSecTxt1{
-    animation: myAnim 2s ease 0s 1 normal forwards;
-}
-.heroSecTxt2{
-    animation: myAnim 2.5s ease 0s 1 normal forwards;
-}
-.heroSecTxt3{
-    animation: myAnim 3s ease 0s 1 normal forwards;
-}
-
-.heroIcon {
-    color: #8edcf0;
-    font-size: 4rem;
-}
 
 
 
@@ -121,9 +111,9 @@ body {
 }
 
 #quoteLine {
-    background-color: #8edcf0;
+    background-color: #464747;
     height: fit-content;
-    color: #35475b;
+    color: #ffffff;
     word-spacing: 10px;
     letter-spacing: 5px;
     font-size: 2rem;
@@ -136,21 +126,26 @@ body {
 /********** MEDIA QUERY-s **********/
 
 @media (max-width: 1199.98px) {
-    .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
-        font-size: 3rem;
+    .dobrodosli {
+        font-size: 8rem;
     }
-   
+    
+    .heroText {
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: 991.98px) {
-    
-    .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
-        font-size: 2rem;
-    }
 
     #quoteLine {
-        
         font-size: 1.6rem
+    }
+    .dobrodosli {
+        font-size: 6rem;
+    }
+    
+    .heroText {
+        font-size: 3rem;
     }
 }
 
@@ -165,45 +160,46 @@ body {
         justify-content: space-around;
         
         }
-    
-       
-        .heroSecTxt1, .heroSecTxt2, .heroSecTxt3{
-            font-size: 2rem;
-            margin: 50px 0 50px 0;
+    #quoteLine {
+        font-size: 1rem
         }
-   
-        #quoteLine {
-            font-size: 1rem
+    .dobrodosli {
+        font-size: 4.5rem;
         }
-    
+        
+    .heroText {
+        font-size: 2.5rem;
+        }
 }
 
 @media (max-width: 575.98px) {
    
     #hero-section{
-       background-position: right;
-        height: max-content;
+        background-position: right;
+        height: 60vh;
       
     }
- 
-
     .navItemPadd {
         padding-bottom: 10px;
     }
 
+    .dobrodosli {
+        font-size: 3rem;
+    }
+    
+    .heroText {
+        font-size: 1.5rem;
+    }
     
    
    
 }
-
-@keyframes myAnim {
+@keyframes dobrodosli {
 	0% {
 		opacity: 0;
-		transform: scale(0.6);
 	}
 
 	100% {
 		opacity: 1;
-		transform: scale(1);
 	}
 }
