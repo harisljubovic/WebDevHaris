@@ -70,6 +70,27 @@ body {
     text-align: center;
     
 }
+
+.dropOmeniBg{
+    background-color: #212222;
+    border: none;
+}
+
+.dropOmeniList:hover {
+    background-color: #464747;
+    
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1;
+}
+
+
+
 /* HERO SECTION */
 
 #hero-section{
@@ -83,12 +104,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 25px 0 25px;
+    user-select: none;
     
 }
 
 .dobrodosli {
     font-size: 10rem;
-    animation: dobrodosli 3s ease 0s 1 normal forwards;
+    animation: dobrodosli 3.5s ease 0s 1 normal forwards;
     
 }
 
@@ -102,15 +124,16 @@ body {
 
 /* MAIN PAGE SEC */
 
-#mainPageSec{
-    height: 100vh;
-}
 
-#mainPageSec{
+
+#curricVitae, #kompetencije{
     height: max-content;
 }
 
-#quoteLine {
+
+
+
+.quoteLine {
     background-color: #464747;
     height: fit-content;
     color: #ffffff;
@@ -121,7 +144,17 @@ body {
     text-align: center;
 }
 
+.headingCV {
+    font-size: 3rem;
+}
 
+.cvUnOrList {
+    font-size: 1rem;
+}
+
+.cvList {
+    list-style-type: none;
+}
 
 /********** MEDIA QUERY-s **********/
 
@@ -137,7 +170,7 @@ body {
 
 @media (max-width: 991.98px) {
 
-    #quoteLine {
+    .quoteLine {
         font-size: 1.6rem
     }
     .dobrodosli {
@@ -160,7 +193,7 @@ body {
         justify-content: space-around;
         
         }
-    #quoteLine {
+    .quoteLine {
         font-size: 1rem
         }
     .dobrodosli {
@@ -170,6 +203,14 @@ body {
     .heroText {
         font-size: 2.5rem;
         }
+
+    .smallDisplayOrderFirst {
+        order: 1;
+    }
+
+    .smallDisplayOrderSecond {
+        order: 2;
+    }
 }
 
 @media (max-width: 575.98px) {

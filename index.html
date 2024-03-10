@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- **********NAVIGATION********** -->
-    <nav class="navbar sticky-top navbar-expand-md navHeight">
+    <nav class="navbar navbar-expand-md navHeight">
       <div class="container-fluid justify-content-between navColor">
         <img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3" />
         <span
@@ -51,14 +51,40 @@
                 ></a
               >
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#"
-                ><span class="linkOnHover borderBottomWhite p-1"
-                  >O MENI</span
-                ></a
+            <div class="dropdown show">
+              <a
+                class="nav-link text-light px-3 navLink dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-            </li>
+                <span class="linkOnHover borderBottomWhite p-1">O MENI</span>
+              </a>
+
+              <div
+                class="dropdown-menu text-center dropOmeniBg"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item text-light dropOmeniList"
+                  href="#curricVitae"
+                  >Curriculum Vitae</a
+                >
+                <a
+                  class="dropdown-item text-light dropOmeniList"
+                  href="#kompetencije"
+                  >Kompetencije</a
+                >
+                <a
+                  class="dropdown-item text-light dropOmeniList"
+                  href="#ciljevi"
+                  >Ciljevi</a
+                >
+              </div>
+            </div>
             <li class="nav-item">
               <a class="nav-link text-light px-3 navLink" href="#"
                 ><span class="linkOnHover borderBottomWhite p-1"
@@ -83,78 +109,254 @@
       </div>
     </nav>
     <!-- ********NAVIGATION END******** -->
+    <!-- ******BACK TO TOP BUTTON****** -->
+    <button
+      type="button"
+      class="btn btn-light btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- ****BACK TO TOP BUTTON END**** -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
     <!-- *********HERO SECTION********* -->
     <div id="hero-section" class="container-fluid">
       <p class="text-light">
         <span class="dobrodosli borderBottomWhite">DOBRODOŠLI</span> <br />
-        <span class="heroText">na harsiljubovic.com</span>
+        <span class="heroText">na harisljubovic.com</span>
       </p>
     </div>
     <!-- *******HERO SECTION END******* -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
     <!-- QUOTE LINE -->
     <div
-      id="quoteLine"
-      class="container-fluid d-flex justify-content-center align-items-center my-5"
+      class="container-fluid d-flex justify-content-center align-items-center my-5 quoteLine"
     >
       DIZAJN JE MISAO PRETVORENA U VIZUAL
     </div>
     <!-- QUOTE LINE END -->
-    <!-- *******MAIN PAGE SECTION******* -->
-    <div id="mainPageSec" class="container-fluid my-5">
-      <div class="row d-flex justify-content-around align-items-center">
-        <div
-          class="col-lg-5 col-l-6 col-md-7 d-flex justify-content-center flex-wrap align-items-center text-light fs-5"
-        >
-          <h1 class="borderBottomBlue">O meni.</h1>
-          <p class="m-0 p-3 textJustify">
-            Kombinacijom znanja, strasti i savremene tehnologije stvaram
-            vizuelno privlačne, moderne i funkcionalne web stranice koje su
-            potpuno prilagodljive svim dimenzijama ekrana. Također se bavim
-            izradom grafičkih elemenata za printane i web medije, kao i
-            kreiranjem jedinstvenog brenda za Vas ili za Vaš biznis. Posvećenost
-            detaljima i sposobnost prilagođavanja svakom projektu garantuju
-            kvalitetan finalni proizvod i potpuno zadovoljstvo klijenta. Moj
-            cilj je da svaku Vašu ideju pretvorim u stvarnost !
+    <!-- *******CV SECTION******* -->
+    <div id="curricVitae" class="container mb-5 pt-5">
+      <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
+        Curriculum Vitae
+      </h2>
+      <div class="row text-light d-flex align-items-center">
+        <div class="col-lg-6 col-l-6 col-md-12 col-sm-12">
+          <p class="headingCV text-center">
+            <span class="borderBottomWhite">Haris Ljubović</span><br />
+            Frontend Web Developer
           </p>
         </div>
         <div
-          class="col-lg-5 col-l-6 col-md-5 d-flex justify-content-center align-items-center"
+          class="col-lg-6 col-l-6 col-md-12 col-sm-12 d-flex justify-content-center"
         >
-          <img src="./img/harisLogo.svg" alt="" class="img-fluid w-100" />
+          <img src="./img/harisLogo.svg" alt="HarisImg" class="img-fuid w-75" />
+        </div>
+      </div>
+
+      <div class="row text-light d-flex justify-content-between mx-1">
+        <div class="col-lg-3 col-l-3 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">KONTAKT INFORMACIJE:</span>
+          </p>
+
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <i class="fa-solid fa-phone pe-1"></i>- 062/074-764
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-regular fa-envelope pe-1"></i>-
+              harisljubovic@gmail.com
+            </li>
+
+            <li class="cvList my-1">
+              <i class="fa-brands fa-facebook pe-1"></i>- Haris Ljubović
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-instagram pe-1"></i>- haris.ljubovic
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-linkedin-in pe-1"></i>- Haris Ljubović
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-github pe-1"></i>- harisljubovic
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-l-3 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">PROFESIONALNE VJEŠTINE:</span>
+          </p>
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <i class="fa-regular fa-file-word pe-1"></i>- MS Office
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-html5 pe-1"></i>- HTML
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-css3-alt pe-1"></i>- CSS
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-bootstrap pe-1"></i>- Bootstrap
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-js pe-1"></i>- JavaScript
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-github pe-1"></i>- Git/GitHub
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-pen pe-1"></i>- Photoshop
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-brands fa-figma pe-1"></i>- Figma
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-l-3 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">OSOBNE VJEŠTINE:</span>
+          </p>
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <i class="fa-solid fa-comments pe-1"></i>- Komunikativnost
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-sitemap pe-1"></i>- Organizovanost
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-user-clock fe-1"></i>- Odgovornost
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-people-group pe-1"></i>- Timski duh
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-list-check pe-1"></i>- Ambicioznost
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-l-3 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">JEZICI:</span>
+          </p>
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <i class="fa-solid fa-language pe-1"></i>
+              Bosanski jezik
+            </li>
+            <li class="cvList my-1">
+              <i class="fa-solid fa-language pe-1"></i>
+              Engleski jezik
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-light text-start d-flex justify-content-start mx-1">
+        <div class="col-lg-6 col-l-6 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">OBRAZOVANJE:</span>
+          </p>
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <span class="borderBottomWhite"
+                >The Web Developer Bootcamp 2023</span
+              >
+              <ul>
+                <li class="cvList my-1">Frontend Development</li>
+                <li class="cvList my-1">2023-u toku</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">IT Akademija Sarajevo</span>
+              <ul>
+                <li class="cvList my-1">Frontend JavaScript Development</li>
+                <li class="cvList my-1">2022-2023</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">NETLAB doo</span>
+              <ul>
+                <li class="cvList my-1">
+                  Napredno poznavanje rada na računaru
+                </li>
+                <li class="cvList my-1">2015-2015</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite"
+                >Srednja Medicinska Škola Jezero - Sarajevo</span
+              >
+              <ul>
+                <li class="cvList my-1">Fizikalna terapija</li>
+                <li class="cvList my-1">2009-2013</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-l-6 col-md-6 col-sm-12">
+          <p class="fs-5 text-start">
+            <span class="borderBottomBlue">RADNO ISKUSTVO:</span>
+          </p>
+          <ul class="cvUnOrList p-0 text-start mb-5">
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">Freelancing</span>
+              <ul>
+                <li class="cvList my-1">2024-u toku</li>
+                <li class="cvList my-1">Dizajn i izrada web stranica</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">DDC Outsourcing Solutions</span>
+              <ul>
+                <li class="cvList my-1">2023</li>
+                <li class="cvList my-1">
+                  Korisnička podrška putem telefona i email-a
+                </li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">ZU Master Fizikal</span>
+              <ul>
+                <li class="cvList my-1">2022-2023</li>
+                <li class="cvList my-1">Fizikalna terapija i rehabilitacija</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite">Central Osiguranje Sarajevo</span>
+              <ul>
+                <li class="cvList my-1">2022</li>
+                <li class="cvList my-1">Interni agent prodaje osiguranja</li>
+              </ul>
+            </li>
+            <li class="cvList my-1">
+              <span class="borderBottomWhite"
+                >Centar za fizikalnu rehabilitaciju "Relief"</span
+              >
+              <ul>
+                <li class="cvList my-1">2019-2022</li>
+                <li class="cvList my-1">
+                  Vlasnik / fizikalna terapija i rehabilitacija
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     <div
-      id="quoteLine"
-      class="container-fluid d-flex justify-content-center align-items-center"
+      class="container-fluid d-flex justify-content-center align-items-center my-5 quoteLine"
     >
       PRETVORITE VAŠE IDEJE U STVARNOST
     </div>
-    <div id="mainPageSec" class="container-fluid my-5">
-      <div class="row d-flex justify-content-around align-items-center">
-        <div
-          class="col-lg-5 col-l-6 col-md-5 d-flex justify-content-center align-items-center"
-        >
-          <img src="./img/img1.svg" alt="" class="img-fluid w-100" />
-        </div>
-        <div
-          class="col-lg-5 col-l-6 col-md-7 d-flex justify-content-center flex-wrap align-items-center text-light fs-5"
-        >
-          <h3 class="border-bottom">USLUGE</h3>
-          <p class="m-0 p-3 textJustify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-            voluptates consectetur incidunt dolor ducimus quis, sunt earum
-            aperiam quam facere? Qui itaque laborum neque. Aliquid repellendus
-            pariatur facilis exercitationem hic odit nobis fugit, adipisci,
-            maxime distinctio ipsa ad repudiandae, facere quo numquam animi
-            dicta reprehenderit aliquam? Officia dicta tempore minus!
-          </p>
-        </div>
-      </div>
+    <!-- *****CV SECTION END***** -->
+    <!-- *****KOMPETENCIJE SECTION***** -->
+    <div id="kompetencije" class="container mb-5 pt-5">
+      <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
+        Kompetencije
+      </h2>
     </div>
-    <!-- *****MAIN PAGE SECTION END***** -->
+    <!-- *****KOMPETENCIJE SECTION END***** -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <script src="./script.js"></script>
