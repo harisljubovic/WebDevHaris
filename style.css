@@ -135,13 +135,13 @@ body {
 
 .headingOMeni {
     font-size: 3rem;
-    width: 65%;
-    padding-left: 50px;
+    width: 50%;
+    
 }
 
 .oMeniHeadImg {
     width: 30%;
-    padding-right: 50px;
+    
 }
 
 .ulListStyle {
@@ -161,7 +161,7 @@ body {
 
 .projektiHeading {
     font-size: 2.5rem;
-    display: inline-block;
+    
 }
 
 .projektiContent{
@@ -188,7 +188,9 @@ body {
     border: 1px solid white;
 }
 
-
+.projektiRowPadding {
+    padding-bottom: 72px;
+}
 
 
 
@@ -227,7 +229,7 @@ body {
     
 
     .headingOMeni{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .OrderFirst {
