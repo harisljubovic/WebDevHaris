@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
     padding: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Inter", sans-serif;
     background-color: #212222;
     font-size: 1rem; 
     margin: 0 auto;
@@ -20,6 +20,8 @@ body {
     text-align: center;
     word-spacing: 2px;
 }
+
+
 /* NAVIGATION */
 
 .navHeight {
@@ -126,35 +128,18 @@ body {
 
 
 
-#curricVitae, #kompetencije{
+#oMeni, #projekti, #ciljevi{
     height: max-content;
+
 }
 
-
-
-
-.quoteLine {
-    background-color: #464747;
-    height: fit-content;
-    color: #ffffff;
-    word-spacing: 10px;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    padding: 30px 10px 30px 10px;
-    text-align: center;
-}
-
-.ulHeadingCV {
-    font-size: 1rem;
-}
-
-.headingCV {
+.headingOMeni {
     font-size: 3rem;
     width: 65%;
     padding-left: 50px;
 }
 
-.cvHeadImg {
+.oMeniHeadImg {
     width: 30%;
     padding-right: 50px;
 }
@@ -168,9 +153,44 @@ body {
     list-style-type: none;
 }
 
-.cvCardImage{
-    width: 250px;;
+.oMeniCard {
+    background-color: #303131;
+    width: 25rem;
+    border-radius: 10px;
 }
+
+.projektiHeading {
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.projektiContent{
+    display: inline-block;
+}
+
+.projektiTechImg {
+    width: 25px;
+}
+
+.projektiBtn {
+    background-color: #8edcf0;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.projektiBtn:hover {
+    background-color: #303131;
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+
 
 /********** MEDIA QUERY-s **********/
 
@@ -183,11 +203,9 @@ body {
         font-size: 4rem;
     }
 
-    .ulHeadingCV {
-        font-size: 0.8rem;
-    }
+    
 
-    .headingCV{
+    .headingOMeni{
         font-size: 3rem;
     }
     
@@ -206,12 +224,22 @@ body {
         font-size: 3rem;
     }
 
-    .ulHeadingCV {
-        font-size: 1rem;
+    
+
+    .headingOMeni{
+        font-size: 2.5rem;
     }
 
-    .headingCV{
-        font-size: 2.5rem;
+    .OrderFirst {
+        order: 1;
+    }
+
+    .OrderSecond {
+        order: 2;
+    }
+
+    .projektiImg {
+        padding-bottom: 2rem;
     }
     
 }
@@ -238,19 +266,11 @@ body {
         font-size: 2.5rem;
         }
 
-    .smallDisplayOrderFirst {
-        order: 1;
-    }
+    
 
-    .smallDisplayOrderSecond {
-        order: 2;
-    }
+    
 
-    .ulHeadingCV {
-        font-size: 1.2rem;
-    }
-
-    .cvHeadImg {
+    .oMeniHeadImg {
         width: 60%;
         margin: 0 auto;
         padding: 0;
@@ -277,9 +297,7 @@ body {
         font-size: 1.5rem;
     }
 
-    .ulHeadingCV {
-        font-size: 1rem;
-    }
+    
     
    
    
@@ -294,50 +312,3 @@ body {
 	}
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    padding: 0;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    /* background-color: #bbb; */
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: transparent;
-    color: white;
-    transform: rotateY(180deg);
-    box-shadow: 0 0 10px #ffffff;
-    border-radius: 20px;
-  }

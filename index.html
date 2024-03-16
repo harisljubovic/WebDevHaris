@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./style.css" />
 
     <title>Web Developer - Haris Ljubović</title>
@@ -51,44 +58,25 @@
                 ></a
               >
             </li>
-            <div class="dropdown show">
-              <a
-                class="nav-link text-light px-3 navLink dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <span class="linkOnHover borderBottomWhite p-1">O MENI</span>
-              </a>
 
-              <div
-                class="dropdown-menu text-center dropOmeniBg"
-                aria-labelledby="dropdownMenuLink"
-              >
-                <a
-                  class="dropdown-item text-light dropOmeniList"
-                  href="#curricVitae"
-                  >Curriculum Vitae</a
-                >
-                <a
-                  class="dropdown-item text-light dropOmeniList"
-                  href="#kompetencije"
-                  >Kompetencije</a
-                >
-                <a
-                  class="dropdown-item text-light dropOmeniList"
-                  href="#ciljevi"
-                  >Ciljevi</a
-                >
-              </div>
-            </div>
             <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#"
+              <a class="nav-link text-light px-3 navLink" href="#oMeni"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >O MENI</span
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-3 navLink" href="#projekti"
                 ><span class="linkOnHover borderBottomWhite p-1"
                   >PROJEKTI</span
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-3 navLink" href="#ciljevi"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >CILJEVI</span
                 ></a
               >
             </li>
@@ -120,7 +108,7 @@
     <!-- ****BACK TO TOP BUTTON END**** -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
     <!-- *********HERO SECTION********* -->
-    <div id="hero-section" class="container-fluid">
+    <div id="hero-section" class="container-fluid mb-5">
       <p class="text-light">
         <span class="dobrodosli borderBottomWhite">DOBRODOŠLI</span> <br />
         <span class="heroText">na harisljubovic.com</span>
@@ -128,266 +116,403 @@
     </div>
     <!-- *******HERO SECTION END******* -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
-    <!-- *******CV SECTION******* -->
-    <div id="curricVitae" class="container mb-5 pt-5">
+    <!-- *******O MENI SECTION******* -->
+    <div id="oMeni" class="container mb-5 pt-3">
       <h2 class="text-light d-flex justify-content-start borderBottomBlue">
-        Curriculum Vitae
+        O meni
       </h2>
-      <div class="row text-light align-items-center">
-        <p class="headingCV text-center d-none d-lg-block d-l-block d-md-block">
+      <div class="text-light d-flex align-items-center">
+        <p
+          class="headingOMeni text-center d-none d-lg-block d-l-block d-md-block"
+        >
           <span class="borderBottomWhite">Haris Ljubović</span><br />
           Frontend Developer
         </p>
         <img
           src="./img/harisLogo.svg"
           alt="HarisImg"
-          class="img-fuid cvHeadImg"
+          class="img-fuid oMeniHeadImg"
         />
       </div>
 
       <div class="row text-light d-flex justify-content-between mx-1">
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/kontaktInfo.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start">
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-phone pe-1"></i>- 062/074-764
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-regular fa-envelope pe-1"></i>-
-                    harisljubovic@gmail.com
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-facebook pe-1"></i>- Haris Ljubović
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-instagram pe-1"></i>- haris.ljubovic
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-linkedin-in pe-1"></i>- Haris
-                    Ljubović
-                  </li>
-                  <li class="listStyle mt-3">
-                    <i class="fa-brands fa-github pe-1"></i>- harisljubovic
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/kontaktInfo.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center">
+                <span class="borderBottomWhite">KONTAK INFORMACIJE</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center card-text">
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-phone pe-1"></i>- 062/074-764
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-regular fa-envelope pe-1"></i>-
+                  harisljubovic@gmail.com
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-facebook pe-1"></i>- Haris Ljubović
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-instagram pe-1"></i>- haris.ljubovic
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-linkedin-in pe-1"></i>- Haris Ljubović
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-github pe-1"></i>- harisljubovic
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/profesVjestine.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start">
-                  <li class="listStyle my-3">
-                    <i class="fa-regular fa-file-word pe-1"></i>- MS Office
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-html5 pe-1"></i>- HTML
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-css3-alt pe-1"></i>- CSS
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-bootstrap pe-1"></i>- Bootstrap
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-js pe-1"></i>- JavaScript
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-brands fa-github pe-1"></i>- Git/GitHub
-                  </li>
-                  <li class="listStyle mt-3">
-                    <i class="fa-solid fa-pen pe-1"></i>- Photoshop
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/profesVjestine.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center">
+                <span class="borderBottomWhite">PROFESIONALNE VJEŠTINE</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center card-text">
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-html5 pe-1"></i>- HTML
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-css3-alt pe-1"></i>- CSS
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-bootstrap pe-1"></i>- Bootstrap
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-js pe-1"></i>- JavaScript
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-brands fa-github pe-1"></i>- Git/GitHub
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-pen pe-1"></i>- Photoshop
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/osobneVjestine.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start">
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-comments pe-1"></i>- Komunikativnost
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-sitemap pe-1"></i>- Organizovanost
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-user-clock fe-1"></i> - Odgovornost
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-people-group pe-1"></i>- Timski duh
-                  </li>
-                  <li class="listStyle mt-3">
-                    <i class="fa-solid fa-list-check pe-1"></i>- Ambicioznost
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/osobneVjestine.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center">
+                <span class="borderBottomWhite">OSOBNE VJEŠTINE</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center card-text">
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-comments pe-1"></i>- Komunikativnost
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-sitemap pe-1"></i>- Organizovanost
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-user-clock fe-1"></i> - Odgovornost
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-people-group pe-1"></i>- Timski duh
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-list-check pe-1"></i>- Ambicioznost
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/jezici.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start">
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-language pe-1"></i>
-                    Bosanski jezik
-                  </li>
-                  <li class="listStyle my-3">
-                    <i class="fa-solid fa-language pe-1"></i>
-                    Engleski jezik
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/jezici.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center">
+                <span class="borderBottomWhite">JEZICI</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center card-text">
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-language pe-1"></i>
+                  Bosanski jezik
+                </li>
+                <li class="listStyle mt-3">
+                  <i class="fa-solid fa-language pe-1"></i>
+                  Engleski jezik
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/obrazovanje.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start">
-                  <li class="listStyle my-3">
-                    The Web Developer Bootcamp 2023
-                    <ul>
-                      <li class="listStyle my-1">Frontend Development</li>
-                    </ul>
-                  </li>
-                  <li class="listStyle my-3">
-                    IT Akademija Sarajevo
-                    <ul>
-                      <li class="listStyle my-1">
-                        Frontend JavaScript Development
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="listStyle mt-3">
-                    Srednja Medicinska Škola Sarajevo
-                    <ul>
-                      <li class="listStyle my-1">Fizikalna terapija</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/obrazovanje.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center card-text">
+                <span class="borderBottomWhite">OBRAZOVANJE</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center">
+                <li class="listStyle mt-3">The Web Developer Bootcamp 2023</li>
+                <li class="listStyle">- Frontend Development</li>
+
+                <li class="listStyle mt-3">IT Akademija Sarajevo</li>
+                <li class="listStyle">- Frontend JavaScript Development</li>
+
+                <li class="listStyle mt-3">
+                  Srednja Medicinska Škola Sarajevo
+                </li>
+                <li class="listStyle">- Fizikalna terapija</li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mb-3"
+          class="col-lg-4 col-l-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-top mb-3"
         >
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div
-                class="flip-card-front d-flex justify-content-center align-items-center"
-              >
-                <img
-                  src="./img/cvImg/radnoIskustvo.svg"
-                  alt="Avatar"
-                  class="cvCardImage"
-                />
-              </div>
-              <div
-                class="flip-card-back d-flex justify-content-center align-items-center"
-              >
-                <ul class="ulListStyle p-0 text-start mb-5 mt-3">
-                  <li class="listStyle my-3">Freelancing</li>
-                  <li class="listStyle my-3">DDC Outsourcing Solutions</li>
-                  <li class="listStyle my-3">ZU Master Fizikal</li>
-                  <li class="listStyle my-3">Central Osiguranje Sarajevo</li>
-                  <li class="listStyle mt-3">
-                    Centar za rehabilitaciju "Relief"
-                  </li>
-                </ul>
-              </div>
+          <div class="card oMeniCard border-0 p-3">
+            <img
+              class="card-img-top w-25 mx-auto my-3"
+              src="./img/cvImg/radnoIskustvo.svg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-light">
+              <h5 class="card-title text-center">
+                <span class="borderBottomWhite">RADNO ISKUSTVO</span>
+              </h5>
+              <ul class="ulListStyle p-0 text-center card-text">
+                <li class="listStyle mt-3">Freelancing</li>
+                <li class="listStyle mt-3">DDC Outsourcing Solutions</li>
+                <li class="listStyle mt-3">ZU Master Fizikal</li>
+                <li class="listStyle mt-3">Central Osiguranje Sarajevo</li>
+                <li class="listStyle mt-3">
+                  Centar za rehabilitaciju "Relief"
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- *****CV SECTION END***** -->
-    <!-- *****KOMPETENCIJE SECTION***** -->
-    <div id="kompetencije" class="container mb-5 pt-5">
+    <!-- *****O MENI SECTION END***** -->
+    <!-- *****PROJEKTI SECTION***** -->
+    <div id="projekti" class="container mb-5 pt-3">
+      <h2 class="text-light d-flex justify-content-start borderBottomBlue">
+        Projekti
+      </h2>
+      <!-- reklamirajSe.ba -->
+      <div class="row text-light mx-3 projektiRow mt-5 pt-5">
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 d-flex justify-content-center"
+        >
+          <img
+            src="./img/projekti/reklamirajSe.ba.svg"
+            alt="reklamirajSe"
+            class="img-fluid w-75 projektiImg"
+          />
+        </div>
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 p-2 text-start"
+        >
+          <div class="projektiHeading mb-4">
+            <span class="borderBottomWhite">reklamirajSe.ba</span>
+          </div>
+          <div class="projektiContent text-start mb-4">
+            Stranica koja je zamišljena kao platforma za reklamiranje i
+            promociju malih i srednjih preduzeća uz blog na kojem se objavljuju
+            akutelne vijesti iz svijeta biznisa, specijalne ponude klijenata i
+            zanimljive priče iz raznih sfera života. Stranica je full responsive
+            i odgovara svih veličinama ekrana. Sastoji se iz 5 sekcija: Početna,
+            O nama, Partneri, Blog i Kontakt.
+          </div>
+          <div class="d-flex justify-content-start mb-4">
+            <img
+              src="./img/projekti/figma.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/html.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/css.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/bootstrap.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/javascript.png"
+              alt=""
+              class="projektiTechImg"
+            />
+          </div>
+          <div class="d-flex justify-content-start mt-3">
+            <a
+              href="https://harisljubovic.github.io/reklamirajSe.ba"
+              type="button"
+              class="btn projektiBtn"
+              target="_blank"
+              >Posjeti stranicu <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- BMI CALCULATOR -->
+      <div class="row text-light mx-3 py-5 my-5 projektiRow">
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 p-2 text-start OrderSecond"
+        >
+          <div class="projektiHeading mb-4">
+            <span class="borderBottomWhite">BMI Kalkulator</span>
+          </div>
+          <div class="projektiContent text-start mb-4">
+            Stranica pomoću koje se veoma jednostavno i brzo računa Body Mass
+            Index osobe. Unosom visine i težine dobijamo rezultat koji sa sobom
+            donosi objašnjenje u skladu sa rezultatom. Ukoliko je BMI nizak ili
+            visok prikazuju se moguće posljedice po organizam, a ukoliko je BMI
+            uredan prikazuje se pohvala zbog adekvatne brige o zdravlju.
+          </div>
+          <div class="d-flex justify-content-start mb-4">
+            <img
+              src="./img/projekti/figma.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/html.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/css.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/javascript.png"
+              alt=""
+              class="projektiTechImg"
+            />
+          </div>
+          <div class="d-flex justify-content-start mt-3">
+            <a
+              href="https://harisljubovic.github.io/BMICalculator"
+              type="button"
+              class="btn projektiBtn"
+              target="_blank"
+              >Posjeti stranicu <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 d-flex justify-content-center OrderFirst"
+        >
+          <img
+            src="./img/projekti/BMICalculator.svg"
+            alt="BMICalculator"
+            class="img-fluid w-75 projektiImg"
+          />
+        </div>
+      </div>
+      <!-- RANDOM NAME GENERATOR -->
+      <div class="row text-light mx-3 projektiRow mb-5 pb-5">
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 d-flex justify-content-center d-flex align-items-center OrderFirst"
+        >
+          <img
+            src="./img/projekti/randomNameGenerator.svg"
+            alt="Random Name Generator"
+            class="img-fluid w-75 projektiImg"
+          />
+        </div>
+        <div
+          class="col-xl-6 col-lg-6 col-l-6 col-md-12 col-sm-12 p-2 text-start OrderSecond"
+        >
+          <div class="projektiHeading mb-4">
+            <span class="borderBottomWhite">Generator imena</span>
+          </div>
+          <div class="projektiContent text-start mb-4">
+            Stranica je namijenjena budućim roditeljima da na zanimljiv i
+            neobičan način dobiju ideju za ime njihove prinove. Stilizovana
+            svijetlijim bojama koje će biti primamljive ukoliko to budu radili
+            sa djecom koja očekuju brata ili sestru. Postoje dvije mogućnosti
+            izbora, muško ili žensko ime, i u zavisnosti od toga, box u kojem će
+            ime biti prikazano poprima plavu boju za muško ili rozu za žensko
+            ime.
+          </div>
+          <div class="d-flex justify-content-start mb-4">
+            <img
+              src="./img/projekti/html.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/css.png"
+              alt=""
+              class="projektiTechImg me-3"
+            />
+            <img
+              src="./img/projekti/javascript.png"
+              alt=""
+              class="projektiTechImg"
+            />
+          </div>
+          <div class="d-flex justify-content-start mt-3">
+            <a
+              href="https://harisljubovic.github.io/RandomNameGenerator"
+              type="button"
+              class="btn projektiBtn"
+              target="_blank"
+              >Posjeti stranicu <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *****PROJEKTI SECTION END***** -->
+    <!-- *****CILJEVI SECTION***** -->
+    <div id="ciljevi" class="container mb-5 pt-3">
       <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
-        Kompetencije
+        Ciljevi
       </h2>
     </div>
-
-    <!-- *****KOMPETENCIJE SECTION END***** -->
-    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- *****CILJEVI SECTION END***** -->
 
     <script src="./script.js"></script>
     <script
