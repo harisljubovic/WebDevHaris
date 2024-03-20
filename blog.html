@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Web Developer - Haris Ljubović</title>
+  </head>
+  <body>
+    <!-- **********NAVIGATION********** -->
+    <nav class="navbar navbar-expand-md navHeight">
+      <div class="container-fluid justify-content-between navColor">
+        <a href="./index.html"
+          ><img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3"
+        /></a>
+        <span
+          class="d-none d-l-block d-lg-block d-xl-block text-light fs-2 ms-3"
+          >Haris Ljubović</span
+        >
+        <button
+          class="navbar-toggler bg-transparent navButton shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="text-light fs-3 d-flex align-items-center"
+            ><i class="fa-solid fa-bars toggleIcon pe-3"></i>MENU</span
+          >
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav bgNav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light px-3 navLink"
+                aria-current="page"
+                href="./index.html"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >NASLOVNA</span
+                ></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link text-light px-3 navLink"
+                href="./index.html#oMeni"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >O MENI</span
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-3 navLink" href="#projekti"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >PROJEKTI</span
+                ></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light px-3 navLink" href="#"
+                ><span class="linkOnHover borderBottomWhite p-1">BLOG</span></a
+              >
+            </li>
+            <li class="nav-item navItemPadd">
+              <a class="nav-link text-light px-4 navLink" href="#"
+                ><span class="linkOnHover borderBottomWhite p-1"
+                  >KONTAKT</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ********NAVIGATION END******** -->
+    <!-- ******BACK TO TOP BUTTON****** -->
+    <button
+      type="button"
+      class="btn btn-light btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- ****BACK TO TOP BUTTON END**** -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- *******BLOG SECTION******* -->
+    <div id="blog" class="container-fluid pt-3">
+      <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
+        Blog
+      </h2>
+      <div class="row mb-5 d-flex justify-content-start align-items-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card blogCard mb-3">
+            <div class="card-block p-3 clearfix">
+              <h4 class="card-title text-center blogHeading py-2">
+                <span class="borderBottomWhite"
+                  >Zašto je web stranica važna za uspješno poslovanje?</span
+                >
+              </h4>
+
+              <img
+                src="./img/blogImg/1.png"
+                class="blogImg img-fluid float-start me-3 mt-1"
+                alt=""
+              />
+              <p class="m-0 p-0">
+                U današnjem digitalnom vremenu, prisutnost na internetu nije
+                samo privilegija, već nužnost za bilo koji ozbiljan biznis. I
+                dok se neki možda i dalje kolebaju oko važnosti posjedovanja web
+                stranice, postoji nekoliko ključnih razloga zbog kojih bi svaki
+                biznis trebao uložiti u svoju prisutnost na webu.
+                <a
+                  class="text-light openModalAnchor"
+                  data-toggle="modal"
+                  data-target=".blogVažnostWebStranice"
+                  ><span class="pročitajCijeliČlanak float-end mt-3"
+                    >Pročitaj cijeli članak</span
+                  >
+                </a>
+              </p>
+
+              <div
+                class="modal fade blogVažnostWebStranice"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myLargeModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header borderBottomBlue">
+                      <h2 class="modalHeading my-3 text-center">
+                        Zašto je web stranica važna za uspješno poslovanje?
+                      </h2>
+                      <button
+                        type="button"
+                        class="close modalCloseBtn"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true"
+                          ><i class="fa-solid fa-xmark"></i
+                        ></span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="blog" class="container fs-5">
+                        <div class="mt-5 mb-4">
+                          Web stranica je ključni alat za uspjeh bilo kojeg
+                          biznisa u današnjem digitalnom dobu. Pruža vam
+                          globalno dostupno tržište, povećava vidljivost, stvara
+                          profesionalni dojam, omogućava 24/7 dostupnost, pruža
+                          marketinške prilike, olakšava kontakt s klijentima i
+                          pruža pristupačnost informacija. Stoga, ulaganje u
+                          kvalitetnu web stranicu je investicija koja će se
+                          isplatiti i dugoročno osigurati uspjeh vašeg biznisa.
+                          U nastavku Vam donosimo 7 najvažnijih razloga zbog
+                          čega je web stranica jako važna za uspješno
+                          poslovanje:
+                        </div>
+                        <div
+                          class="row d-flex justify-content-center align-items-center mb-4"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                          >
+                            <img
+                              src="./img/blogImg/globalnoTržište.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5"
+                          >
+                            <h4 class="">1. GLOBALNA DOSTUPNOST TRŽIŠTA</h4>
+                            <p>
+                              Web stranica otvara vaš biznis svijetu. Umjesto da
+                              ste ograničeni na lokalno tržište, web stranica
+                              omogućava potencijalnim klijentima iz cijelog
+                              svijeta da pronađu vaše proizvode ili usluge. To
+                              vam omogućava da dosegnete mnogo veću publiku i
+                              ostvarite veći potencijalni prihod.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex align-items-center mb-4 d-flex justify-content-center align-items-center"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5 orderSecond"
+                          >
+                            <h4 class="">2. POVEĆANA VIDLJIVOST</h4>
+                            <p>
+                              Kada ljudi traže proizvode ili usluge koje vi
+                              nudite, prva stvar koju će obično učiniti je
+                              pretraživanje na internetu. Ako nemate web
+                              stranicu, gubite priliku da se pojavite u
+                              rezultatima tih pretraga. Imati web stranicu
+                              omogućava vam da se pojavite u rezultatima
+                              pretrage i povećate svoju vidljivost.
+                            </p>
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center orderFirst"
+                          >
+                            <img
+                              src="./img/blogImg/povećanaVidljivost.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex justify-content-center align-items-center mb-4"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                          >
+                            <img
+                              src="./img/blogImg/profesionalniDojam.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5"
+                          >
+                            <h4 class="">3. PROFESIONALNI DOJAM</h4>
+                            <p>
+                              Web stranica pruža priliku da predstavite svoj
+                              biznis na profesionalan način. Atraktivno
+                              dizajnirana i informativna web stranica stvara
+                              povjerenje kod posjetitelja i daje dojam
+                              ozbiljnosti i pouzdanosti vašeg biznisa.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex align-items-center mb-4 d-flex justify-content-center align-items-center"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5 orderSecond"
+                          >
+                            <h4 class="">4. 24/7 dostupnost</h4>
+                            <p>
+                              Dok fizički poslovi imaju svoje radno vrijeme, web
+                              stranica je dostupna 24 sata dnevno, 7 dana u
+                              sedmici. To znači da potencijalni klijenti mogu
+                              pristupiti informacijama o vašim proizvodima ili
+                              uslugama kad god to njima odgovara, bez obzira na
+                              vaše radno vrijeme.
+                            </p>
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center orderFirst"
+                          >
+                            <img
+                              src="./img/blogImg/dostupnost.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex justify-content-center align-items-center mb-4"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                          >
+                            <img
+                              src="./img/blogImg/marketinškePrilike.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5"
+                          >
+                            <h4 class="">5. MARKETINŠKE PRILIKE</h4>
+                            <p>
+                              Web stranica je odličan alat za marketinške
+                              aktivnosti. Možete koristiti blogove, društvene
+                              medije, SEO (optimizacija za tražilice) i druge
+                              strategije kako biste privukli posjetitelje na
+                              svoju web stranicu i promovirali svoj biznis.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex align-items-center mb-4 d-flex justify-content-center align-items-center"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5 orderSecond"
+                          >
+                            <h4 class="">
+                              6. KONTAKT I INTERAKCIJA SA KLIJENTIMA
+                            </h4>
+                            <p>
+                              Putem web stranice možete olakšati komunikaciju s
+                              klijentima. Obrazac za kontakt, chat podrška ili
+                              čak integracija e-pošte omogućavaju klijentima da
+                              vam postavljaju pitanja, pružaju povratne
+                              informacije ili ostvaruju kontakte s vama u bilo
+                              koje vrijeme.
+                            </p>
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center orderFirst"
+                          >
+                            <img
+                              src="./img/blogImg/kontakt.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="row d-flex justify-content-center align-items-center mb-4"
+                        >
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                          >
+                            <img
+                              src="./img/blogImg/pristupačnostInfo.png"
+                              alt=""
+                              class="img-fluid blogContentImgSize blogContentImgBorderRadius"
+                            />
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-5"
+                          >
+                            <h4 class="">7. PRISTUPAČNOST INFORMACIJA</h4>
+                            <p>
+                              Web stranica omogućava vam da pružite detaljne
+                              informacije o svojim proizvodima ili uslugama,
+                              cijenama, radnom vremenu, lokaciji i drugim važnim
+                              aspektima vašeg poslovanja. To olakšava
+                              potencijalnim klijentima da saznaju više o vama
+                              prije donošenja odluke o kupnji.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="my-5">
+                          Kroz ovaj blog smo istražili ključne razloge zašto je
+                          web stranica nezaobilazna komponenta uspješnog
+                          poslovanja u današnjem digitalnom dobu. Sposobnost da
+                          privuče, angažuje i zadrži korisnike, pruži relevantne
+                          informacije i ostvari prodaju čini web stranicu
+                          vitalnim alatom za svaku firmu. Stoga, još jednom ćemo
+                          naglasiti da ulaganje u kvalitetnu web prisutnost nije
+                          samo nužnost, već i odlučujući faktor za postizanje
+                          konkurentske prednosti i dugoročnog uspjeha.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------------------- -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card blogCard mb-3">
+            <div class="card-block p-3 clearfix">
+              <h4 class="card-title text-center blogHeading py-2">
+                <span class="borderBottomWhite"
+                  >SEO - zbog čega je ključan za uspjeh web stranice?</span
+                >
+              </h4>
+
+              <img
+                src="./img/blogImg/seo.png"
+                class="blogImg img-fluid float-start me-3 mt-1"
+                alt=""
+              />
+              <p class="m-0 p-0">
+                SEO (Search Engine Optimization) predstavlja vitalni faktor za
+                uspjeh svake web stranice. Bez obzira na to jeste li vlasnik
+                lokalnog biznisa ili globalne online platforme, optimizacija za
+                pretraživače igra ključnu ulogu u poboljšanju vidljivosti,
+                povećanju prometa i rastu poslovanja.
+                <a
+                  class="text-light openModalAnchor"
+                  data-toggle="modal"
+                  data-target=".blogSEO"
+                  ><span class="pročitajCijeliČlanak float-end mt-3"
+                    >Pročitaj cijeli članak</span
+                  >
+                </a>
+              </p>
+
+              <div
+                class="modal fade blogSEO"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="myLargeModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header borderBottomBlue">
+                      <h2 class="modalHeading my-3 text-center">
+                        SEO - zbog čega je ključan za uspjeh web stranice?
+                      </h2>
+                      <button
+                        type="button"
+                        class="close modalCloseBtn"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true"
+                          ><i class="fa-solid fa-xmark"></i
+                        ></span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="blog" class="container fs-5">
+                        <div class="row mt-5 mb-5 d-flex align-items-center">
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center"
+                          >
+                            <img
+                              src="./img/blogImg/seoContent1.png"
+                              alt=""
+                              class="img-fluid rounded mt-3 w-75"
+                            />
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <p class="mt-3">
+                              U digitalnom dobu, gdje se konkurencija neprestano
+                              širi, uspjeh web stranice sve više ovisi o tome
+                              kako dobro može biti pronađena na internetu. Ovdje
+                              dolazi ključna uloga SEO-a (Search Engine
+                              Optimization), procesa koji poboljšava vidljivost
+                              web stranice na tražilicama poput Googlea, Binga i
+                              Yahooa. Bez adekvatne implementacije SEO
+                              strategija, čak i najkvalitetniji sadržaj može
+                              ostati neotkriven, propuštajući potencijalne
+                              posjetitelje i prilike za konverzije.
+                            </p>
+                            <p class="p-0 m-0">
+                              Kada korisnici traže informacije ili proizvode na
+                              internetu, obično se oslanjaju na tražilice.
+                              Visoko rangirane stranice na rezultatima pretrage
+                              imaju veću vjerojatnost da će biti primijećene i
+                              posjećene. SEO optimizacija pomaže web stranicama
+                              da se pozicioniraju što više na tražilicama,
+                              povećavajući njihovu vidljivost i privlačeći veći
+                              broj posjetitelja.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row mb-5 d-flex align-items-center">
+                          <div class="col-12">
+                            <p class="p-0 m-0">
+                              SEO ne obuhvaća samo tehničke aspekte kao što su
+                              ključne riječi i backlinkovi, već i faktore poput
+                              brzine učitavanja stranice, mobilne optimizacije i
+                              korisničke navigacije. Kroz optimizaciju ovih
+                              elemenata, web stranica postaje ugodnije mjesto za
+                              posjetitelje, što rezultira boljim korisničkim
+                              iskustvom i većom vjerojatnošću da se posjetitelji
+                              vrate. Jedan od ključnih ciljeva SEO-a je privući
+                              ciljani promet, tj. posjetitelje koji su
+                              zainteresirani za ono što web stranica nudi.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row mb-5">
+                          <div class="col-12 d-flex justify-content-center">
+                            <img
+                              src="./img/blogImg/seoContent2.png"
+                              class="w-100 rounded"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="row mb-5 d-flex align-items-center">
+                          <div class="col-12">
+                            <p class="p-0 m-0">
+                              Web stranice koje se redovito pojavljuju na vrhu
+                              rezultata pretrage obično su percipirane kao
+                              autoritativne i pouzdane. Kroz kontinuiran rad na
+                              SEO optimizaciji, web stranica gradi svoj
+                              autoritet u određenoj niši ili industriji, što
+                              može rezultirati povjerenjem korisnika i većim
+                              brojem konverzija. Korištenjem relevantnih
+                              ključnih riječi i optimizirajući sadržaj prema
+                              potrebama korisnika, SEO pomaže privući kvalitetne
+                              posjetitelje koji su skloni angažmanu i
+                              konverziji.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row mb-4 d-flex align-items-center">
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 orderSecond"
+                          >
+                            <p class="mt-3">
+                              Iako SEO rezultati ne dolaze preko noći, dugoročno
+                              ulaganje u SEO može donijeti konzistentan i
+                              stabilan promet na web stranicu. Dok se plaćeni
+                              oglasi uklanjaju kada se prestane plaćati, visoko
+                              rangirane stranice zadržavaju svoju poziciju i
+                              nakon prestanka aktivnog ulaganja u SEO.
+                            </p>
+                            <p>
+                              SEO je neophodan za uspjeh bilo koje web stranice
+                              u današnjem digitalnom okruženju. Kroz poboljšanje
+                              vidljivosti, korisničkog iskustva, generiranja
+                              kvalitetnog prometa i izgradnje autoriteta, SEO
+                              omogućuje web stranicama da dosegnu svoj puni
+                              potencijal i ostvare svoje ciljeve. Stoga,
+                              ulaganje u SEO nije trošak, već investicija u
+                              dugoročni uspjeh i rast.
+                            </p>
+                          </div>
+                          <div
+                            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center orderFirst"
+                          >
+                            <img
+                              src="./img/blogImg/seoContent3.png"
+                              class="img-fluid rounded w-75"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------------------- -->
+      </div>
+    </div>
+
+    <!-- *******BLOG SECTION END******* -->
+
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5d4d4b3419.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

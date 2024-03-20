@@ -48,7 +48,8 @@ body {
 }
 
 .linkOnHover:hover{
-   border-color: #8edcf0;
+    border-bottom: 1px solid #8edcf0;
+   
 }
 
 .navButton{
@@ -98,7 +99,7 @@ body {
 #hero-section{
     width: 100%;
     height: 90vh;
-    background-image: url(./img/proba1.jpg);    
+    background-image: url(./img/heroBg.jpg);    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +129,7 @@ body {
 
 
 
-#oMeni, #projekti, #ciljevi{
+#oMeni, #projekti{
     height: max-content;
 
 }
@@ -152,6 +153,13 @@ body {
 .listStyle {
     list-style-type: none;
 }
+
+.listStyle a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .oMeniCard {
     background-color: #303131;
@@ -194,6 +202,75 @@ body {
 
 
 
+/* .modal-dialog{
+    overflow-y: initial !important
+}
+.modal-content{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+} */
+
+
+
+.blogImg {
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.blogHeading {
+    font-size: 1.4rem;
+}
+
+
+.blogCard {
+    background-color: #303131;
+    color: white;
+    
+}
+
+.openModalAnchor {
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pročitajCijeliČlanak {
+    font-style: italic;
+    color: #8edcf0;
+}
+
+.modal-content {
+    background-color: #303131;
+}
+
+.modalHeading {
+    font-size: 2rem;
+}
+
+.modalCloseBtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.modal-content {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.blogContentImgSize {
+    width: 300px;
+    
+}
+
+.blogContentImgBorderRadius {
+    border-radius: 50%;
+}
+
+
 /********** MEDIA QUERY-s **********/
 
 @media (max-width: 1199.98px) {
@@ -232,16 +309,20 @@ body {
         font-size: 2rem;
     }
 
-    .OrderFirst {
+    .orderFirst {
         order: 1;
     }
 
-    .OrderSecond {
+    .orderSecond {
         order: 2;
     }
 
     .projektiImg {
         padding-bottom: 2rem;
+    }
+
+    .modalHeading {
+        font-size: 1.5rem;
     }
     
 }
@@ -267,15 +348,15 @@ body {
     .heroText {
         font-size: 2.5rem;
         }
-
-    
-
-    
-
+  
     .oMeniHeadImg {
         width: 60%;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .modalHeading {
+        font-size: 1.1rem;
     }
     
 }
@@ -299,7 +380,9 @@ body {
         font-size: 1.5rem;
     }
 
-    
+    .modalHeading {
+        font-size: 0.8rem;
+    }
     
    
    
