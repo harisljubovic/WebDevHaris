@@ -12,19 +12,18 @@ function titleAnimation() {
 }
 titleAnimation();
 
-let mybutton = document.getElementById("btn-back-to-top");
-window.onscroll = function () {
-  scrollFunction();
+// ********NAVBAR SCROLL******* //
+
+let navBar = document.querySelector("#navBar");
+
+window.onscroll = () => {
+  navBarScroll();
 };
-function scrollFunction() {
+
+function navBarScroll() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    navBar.classList.add("navBarScroll");
   } else {
-    mybutton.style.display = "none";
+    navBar.classList.remove("navBarScroll");
   }
-}
-mybutton.addEventListener("click", backToTop);
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }

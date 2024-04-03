@@ -1,0 +1,428 @@
+// ****************************** forEach method***********************************
+
+// -------------------------------------------------------------------------------
+// Množenje svakog broja samim sobom
+
+// const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+// nums.forEach(function (n) {
+//   console.log(n * n);
+// });
+
+// -------------------------------------------------------------------------------
+// Izdvajanje pozitivnih brojeva
+
+// nums.forEach(function (el) {
+//   if (el % 2 === 0) {
+//     console.log(el);
+//   }
+// });
+
+// ---------------------------------------------------------------------------------
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// numbers.forEach(function (el) {
+//   console.log(el);
+// });
+
+// for (let el of numbers) {
+//   console.log(el);
+// }
+
+// ----------------------------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//   },
+// ];
+
+// movies.forEach(function (movie) {
+//   console.log(`${movie.title} - ${movie.score}/100 score.`);
+// });
+
+// ----------------------------------------------------------------------------------
+
+// ****************************** The Map method***********************************
+
+// const texts = ["rofl", "lol", "omg", "ttyl"];
+// const caps = texts.map(function (t) {
+//   return t.toUpperCase();
+// });
+
+// console.log(texts);
+// console.log(caps);
+
+// ----------------------------------------------------------------------------------
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ];
+
+// const doubles = numbers.map(function (num) {
+//   return num * 2;
+// });
+
+// console.log(doubles);
+
+// ----------------------------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//   },
+// ];
+
+// const titles = movies.map(function (movie) {
+//   return movie.title.toUpperCase();
+// });
+
+// console.log(titles);
+
+// -----------------------------------------------------------------------------------
+
+// const fullNames = [
+//   { first: "Albus", last: "Dumbledore" },
+//   { first: "Harry", last: "Potter" },
+//   { first: "Hermione", last: "Granger" },
+//   { first: "Ron", last: "Weasley" },
+//   { first: "Rubeus", last: "Hagrid" },
+//   { first: "Minerva", last: "McGonagall" },
+//   { first: "Severus", last: "Snape" },
+// ];
+
+// const firstNames = fullNames.map(function (fName) {
+//   return fName.first;
+// });
+
+// -------------------------------------------------------------------------------------
+
+// ****************************** filter method***********************************
+
+// const nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+// const odds = nums.filter((n) => {
+//   return n % 2 === 1;
+// });
+
+// const smallNum = nums.filter((n) => n < 5);
+
+// ----------------------------------------------------------------------------
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+// numbers.filter((n) => {
+//   return n === 4;
+// });
+
+// const lesTen = numbers.filter((n) => {
+//   return n < 10;
+// });
+
+// ----------------------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1987,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//     year: 1995,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//     year: 2013,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//     year: 2021,
+//   },
+// ];
+
+// const greatMovie = movies.filter((movie) => {
+//   return movie.score > 90;
+// });
+
+// const greatMovies = movies.filter((m) => m.score > 80);
+// const badMovies = movies.filter((b) => b.score < 90);
+// const recentMovie = movies.filter((r) => r.year > 1999);
+
+// ----------------------------------------------------------------------------------
+
+// *********Combination map and filter methods********* //
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1987,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//     year: 1995,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//     year: 2013,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//     year: 2021,
+//   },
+// ];
+
+// // const goodMovies = movies.filter((g) => g.score > 80);
+// // const goodTitle = goodMovies.map((m) => m.title);
+
+// const goodMovies = movies.filter((m) => m.score > 80).map((m) => m.title);
+
+// ----------------------------------------------------------------------------------
+
+// function validUserNames(arr) {
+//   const filteredArr = arr.filter(function (name) {
+//     return name.length < 10;
+//   });
+//   return filteredArr;
+// }
+
+// function validUserNames(arr) {
+//   return arr.filter((name) => name.length < 10);
+// }
+
+// const validUserNames = (usernames) =>
+//   usernames.filter((usr) => usr.length < 10);
+
+// --------------------------------------------------------------------------
+
+// **********Some & Every Methods********* //
+
+// SOME//
+
+// const words = ["dog", "yello", "log", "cupcake", "bag", "wag"];
+
+// words.some((word) => {
+//   return word.length > 4;
+// });
+// words.some((word) => word[0] === "Z");
+// words.some((word) => word.includes("cake"));
+
+// -------------------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1987,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//     year: 1995,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//     year: 2013,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//     year: 2021,
+//   },
+// ];
+
+// movies.some((movie) => movie.score > 80); //true
+// movies.some((year) => year.year < 1987); //false
+
+// EVERY//
+
+// const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 77];
+
+// exams.every((score) => score >= 75); //true
+// exams.every((score) => score >= 80); //false
+
+// -------------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1987,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//     year: 1995,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//     year: 2013,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//     year: 2021,
+//   },
+// ];
+
+// movies.every((movie) => movie.score > 75); //true
+// movies.every((movie) => movie.score < 80); //false
+
+// ---------------------------------------------------------------------------
+
+// function allEvens(even) {
+//   return even.every(function (num) {
+//     return num % 2 === 0;
+//   });
+// }
+
+// const allEvens = function (arr) {
+//   return arr.every((num) => num % 2 === 0);
+// };
+
+// const allEvens = (arr) => arr.every((num) => num % 2 === 0);
+
+// --------------------------------------------------------------------------
+
+// **********Notorius Reduce Methods********* //
+
+// const prices = [9.99, 1.5, 19.99, 49.99, 30.5];
+
+// let total = 0;
+// for (let price of prices) {
+//   total += price;   //without reduce
+// }
+
+// console.log(total);
+
+// -------------------------------------------------------
+
+// const total = prices.reduce((total, price) => {
+//   return total + price;
+// });
+
+// console.log(total);
+
+// -------------------------------------------------------
+
+// const total = prices.reduce((total, price) => total + price);
+
+// console.log(total);
+
+// ----------------------------------------------------------
+
+// Finding minimum value in the array
+
+// const minPrice = prices.reduce((min, price) => {
+//   if (price < min) {
+//     return price;
+//   }
+//   return min;
+// });
+
+// console.log(minPrice);
+
+// ---------------------------------------------------------
+
+// Finding maximum value in the array
+
+// const maxPrice = prices.reduce((min, price) => {
+//   if (price > min) {
+//     return price;
+//   }
+//   return min;
+// });
+
+// console.log(maxPrice);
+
+// ---------------------------------------------------------------
+
+// const movies = [
+//   {
+//     title: "Amadeus",
+//     score: 99,
+//     year: 1987,
+//   },
+//   {
+//     title: "Stand By Me",
+//     score: 85,
+//     year: 1995,
+//   },
+//   {
+//     title: "Parasite",
+//     score: 95,
+//     year: 2013,
+//   },
+//   {
+//     title: "Alien",
+//     score: 90,
+//     year: 2021,
+//   },
+// ];
+
+// Finding highest rating movie
+
+// const highestRate = movies.reduce((bestMovie, currMovie) => {
+//   if (currMovie.score > bestMovie.score) {
+//     return currMovie;
+//   }
+//   return bestMovie;
+// });
+
+// console.log(highestRate);
+
+// ----------------------------------------------------------------------------
+
+// const evens = [2, 4, 6, 8];
+
+// evens.reduce((sum, num) => sum + num, 100);
+
+// ----------------------------------------------------------------------------
+
+// Arrow Function and "this"
+
+const person = {
+  firstName: "Haris",
+  lastName: "Ljubović",
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};

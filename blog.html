@@ -22,92 +22,72 @@
   </head>
   <body>
     <!-- **********NAVIGATION********** -->
-    <nav class="navbar navbar-expand-md navHeight">
-      <div class="container-fluid justify-content-between navColor">
-        <a href="./index.html"
-          ><img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3"
-        /></a>
-        <span
-          class="d-none d-l-block d-lg-block d-xl-block text-light fs-2 ms-3"
-          >Haris Ljubović</span
-        >
-        <button
-          class="navbar-toggler bg-transparent navButton shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-light fs-3 d-flex align-items-center"
-            ><i class="fa-solid fa-bars toggleIcon pe-3"></i>MENU</span
-          >
-        </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav bgNav">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light px-3 navLink"
-                aria-current="page"
-                href="./index.html"
-                ><span class="linkOnHover borderBottomWhite p-1"
-                  >NASLOVNA</span
-                ></a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link text-light px-3 navLink"
-                href="./index.html#oMeni"
-                ><span class="linkOnHover borderBottomWhite p-1"
-                  >O MENI</span
-                ></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#projekti"
-                ><span class="linkOnHover borderBottomWhite p-1"
-                  >PROJEKTI</span
-                ></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#"
-                ><span class="linkOnHover borderBottomWhite p-1">BLOG</span></a
-              >
-            </li>
-            <li class="nav-item navItemPadd">
-              <a class="nav-link text-light px-4 navLink" href="#"
-                ><span class="linkOnHover borderBottomWhite p-1"
-                  >KONTAKT</span
-                ></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- ********NAVIGATION END******** -->
-    <!-- ******BACK TO TOP BUTTON****** -->
-    <button
-      type="button"
-      class="btn btn-light btn-floating btn-lg"
-      id="btn-back-to-top"
+    <div
+      class="navbar navbar-expand-md container-fluid justify-content-between"
+      id="navBar"
     >
-      <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- ****BACK TO TOP BUTTON END**** -->
-    <!-- ---------------------------------------------------------------------------------------------------- -->
+      <a href="./index.html"
+        ><img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3"
+      /></a>
+      <span class="d-none d-l-block d-lg-block d-xl-block text-light fs-2 ms-3"
+        >Haris Ljubović</span
+      >
+      <button
+        class="navbar-toggler bg-transparent navButton shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="text-light fs-3 d-flex align-items-center"
+          ><i class="fa-solid fa-bars toggleIcon pe-3"></i>MENU</span
+        >
+      </button>
 
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav bgNav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-light px-3 navLink"
+              aria-current="page"
+              href="./index.html"
+              ><span class="linkOnHover p-1">NASLOVNA</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-light px-3 navLink"
+              href="./index.html#oMeni"
+              ><span class="linkOnHover p-1">O MENI</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-3 navLink" href="#projekti"
+              ><span class="linkOnHover p-1">PROJEKTI</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-3 navLink" href="#"
+              ><span class="linkOnHover p-1">BLOG</span></a
+            >
+          </li>
+          <li class="nav-item navItemPadd">
+            <a class="nav-link text-light px-4 navLink" href="#"
+              ><span class="linkOnHover p-1">KONTAKT</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ********NAVIGATION END******** -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
     <!-- *******BLOG SECTION******* -->
-    <div id="blog" class="container-fluid pt-3">
+    <div id="blog" class="container-fluid">
       <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
         Blog
       </h2>

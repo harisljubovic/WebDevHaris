@@ -24,13 +24,16 @@ body {
 
 /* NAVIGATION */
 
-.navHeight {
-    height: fit-content;
-    background-color: #212222;
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    height: 70px;
 }
 
-.navColor {
+.navBarScroll {
     background-color: #212222;
+    z-index: 1;
+    
 }
 
 .navimg {
@@ -40,12 +43,10 @@ body {
 .navLink {
     width: max-content;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
-.navbar-nav {
-    line-height: 2rem;
-}
+
 
 .linkOnHover:hover{
     border-bottom: 1px solid #8edcf0;
@@ -98,7 +99,7 @@ body {
 
 #hero-section{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: url(./img/heroBg.jpg);    
     background-position: center;
     background-repeat: no-repeat;
@@ -129,9 +130,9 @@ body {
 
 
 
-#oMeni, #projekti{
+#oMeni, #kontakt{
     height: max-content;
-
+    padding-top: 100px;
 }
 
 .headingOMeni {
@@ -159,6 +160,12 @@ body {
     color: white;
 }
 
+#projekti {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: #8edcf0 #303131;
+    scrollbar-width:auto;
+}
 
 
 .oMeniCard {
@@ -209,6 +216,10 @@ body {
     max-height: calc(100vh - 200px);
     overflow-y: auto;
 } */
+
+#blog {
+    padding-top: 100px;
+}
 
 
 
@@ -270,6 +281,33 @@ body {
     border-radius: 50%;
 }
 
+.contactIntro {
+    font-size: 1.5rem;
+    
+}
+
+.socialMediaImg {
+    width: 180px;
+    
+}
+
+.socialMediaImg:hover {
+    transform: scale(1.1);
+    transition: 500ms ease;
+    
+}
+
+.form-control:focus {
+    
+    border: 2px solid rgb(142, 220, 240) !important;
+    box-shadow: inset 0px 1px 1px rgb(142, 220, 240), 0 0 4px rgb(142, 220, 240) !important;
+  }
+
+  footer {
+    background-color: #303131;
+  }
+
+
 
 /********** MEDIA QUERY-s **********/
 
@@ -325,9 +363,17 @@ body {
         font-size: 1.5rem;
     }
     
+    .socialMediaHeading{
+        margin-top: 48px;
+    }
 }
 
 @media (max-width: 767.98px) {
+
+   .bgNav, .navbar {
+    background-color: #212222;
+   }
+
     .linkOnHover{
         border-bottom: 1px solid #ffffff;
         border-radius: 0px;
@@ -362,6 +408,11 @@ body {
 }
 
 @media (max-width: 575.98px) {
+
+    .navLink {
+     
+        font-size: 0.5rem;
+    }
    
     #hero-section{
         background-position: right;

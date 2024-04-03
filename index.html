@@ -22,80 +22,70 @@
   </head>
   <body>
     <!-- **********NAVIGATION********** -->
-    <nav class="navbar navbar-expand-md navHeight">
-      <div class="container-fluid justify-content-between navColor">
-        <a href="./index.html"
-          ><img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3"
-        /></a>
-        <span
-          class="d-none d-l-block d-lg-block d-xl-block text-light fs-2 ms-3"
-          >Haris Ljubović</span
-        >
-        <button
-          class="navbar-toggler bg-transparent navButton shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="text-light fs-3 d-flex align-items-center"
-            ><i class="fa-solid fa-bars toggleIcon pe-3"></i>MENU</span
-          >
-        </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav bgNav">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light px-3 navLink"
-                aria-current="page"
-                href="./index.html"
-                ><span class="linkOnHover p-1">NASLOVNA</span></a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#oMeni"
-                ><span class="linkOnHover p-1">O MENI</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light px-3 navLink" href="#projekti"
-                ><span class="linkOnHover p-1">PROJEKTI</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light px-3 navLink"
-                href="./blog.html"
-                target="_blank"
-                ><span class="linkOnHover p-1">BLOG</span></a
-              >
-            </li>
-            <li class="nav-item navItemPadd">
-              <a class="nav-link text-light px-4 navLink" href="#"
-                ><span class="linkOnHover p-1">KONTAKT</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- ********NAVIGATION END******** -->
-    <!-- ******BACK TO TOP BUTTON****** -->
-    <button
-      type="button"
-      class="btn btn-light btn-floating btn-lg"
-      id="btn-back-to-top"
+    <div
+      class="navbar navbar-expand-md container-fluid d-flex justify-content-between"
+      id="navBar"
     >
-      <i class="fas fa-arrow-up"></i>
-    </button>
-    <!-- ****BACK TO TOP BUTTON END**** -->
+      <a href="./index.html"
+        ><img src="./img/navLogoImg.svg" alt="" width="50px" class="ms-3"
+      /></a>
+      <span class="d-none d-l-block d-lg-block d-xl-block text-light fs-2 ms-3"
+        >Haris Ljubović</span
+      >
+      <button
+        class="navbar-toggler bg-transparent navButton shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="text-light fs-3 d-flex align-items-center"
+          ><i class="fa-solid fa-bars toggleIcon pe-3"></i>MENU</span
+        >
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav bgNav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-light px-3 navLink"
+              aria-current="page"
+              href="./index.html"
+              ><span class="linkOnHover p-1">NASLOVNA</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light px-3 navLink" href="#oMeni"
+              ><span class="linkOnHover p-1">O MENI</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-3 navLink" href="#projekti"
+              ><span class="linkOnHover p-1">PROJEKTI</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light px-3 navLink"
+              href="./blog.html"
+              target="_blank"
+              ><span class="linkOnHover p-1">BLOG</span></a
+            >
+          </li>
+          <li class="nav-item navItemPadd">
+            <a class="nav-link text-light px-4 navLink" href="#kontakt"
+              ><span class="linkOnHover p-1">KONTAKT</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ********NAVIGATION END******** -->
     <!-- ---------------------------------------------------------------------------------------------------- -->
     <!-- *********HERO SECTION********* -->
     <div id="hero-section" class="container-fluid mb-5">
@@ -509,7 +499,108 @@
         </div>
       </div>
     </div>
+
     <!-- *****PROJEKTI SECTION END***** -->
+
+    <!-- ****** KONTAKT SECTION ****** -->
+    <div id="kontakt" class="container mb-5 pt-3 text-light">
+      <h2 class="text-light d-flex justify-content-start borderBottomBlue mb-5">
+        Kontakt
+      </h2>
+      <div class="row">
+        <div class="contactIntro text-center pb-5 mb-5 borderBottomWhite">
+          <p class="display-5">Kako Vam mogu pomoći?</p>
+          <p class="p-0 m-0">
+            Potrebna Vam je neka informacija, zainteresovani ste za saradnju,
+            imate prijedlog ili kritiku? Kontaktirajte me.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3 class="mb-5 text-center">
+            <span class="borderBottomWhite">Pošaljite poruku:</span>
+          </h3>
+          <form>
+            <div class="mb-4 w-75 mx-auto">
+              <label class="form-label" for="form4Example1">Ime:</label>
+              <input type="text" id="form4Example1" class="form-control" />
+            </div>
+            <div class="mb-4 w-75 mx-auto">
+              <label class="form-label" for="form4Example1">Prezime:</label>
+              <input type="text" id="form4Example1" class="form-control" />
+            </div>
+
+            <div class="mb-4 w-75 mx-auto">
+              <label class="form-label" for="form4Example2"
+                >Email adresa:</label
+              >
+              <input type="email" id="form4Example2" class="form-control" />
+            </div>
+
+            <div class="mb-4 w-75 mx-auto">
+              <label class="form-label" for="form4Example3">Poruka:</label>
+              <textarea
+                class="form-control"
+                id="form4Example3"
+                rows="8"
+              ></textarea>
+            </div>
+
+            <div class="mb-4 w-75 mx-auto d-flex justify-content-end">
+              <button type="button" class="btn projektiBtn">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h3 class="mb-5 text-center socialMediaHeading">
+            <span class="borderBottomWhite"
+              >Potražite me na društvenim mrežama:</span
+            >
+          </h3>
+          <div class="d-flex justify-content-center">
+            <a href="https://www.instagram.com/haris.ljubovic/" target="_blank"
+              ><img
+                src="./img/socialMediaIcon/instagram.png"
+                alt=""
+                class="img-fluid socialMediaImg pb-3"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a
+              href="https://www.linkedin.com/in/haris-ljubovic-22ba74209/"
+              target="_blank"
+              ><img
+                src="./img/socialMediaIcon/linkedin.png"
+                alt=""
+                class="img-fluid socialMediaImg pb-3"
+            /></a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/harisljubovic" target="_blank"
+              ><img
+                src="./img/socialMediaIcon/github.png"
+                alt=""
+                class="img-fluid socialMediaImg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *****KONTAKT SECTION END***** -->
+    <!-- ******FOOTER****** -->
+    <div class="container-fluid p-0 m-0">
+      <footer class="text-center text-white">
+        <div class="text-center text-light p-4 fs-5">
+          &#169;2024: Sva prava zadržana.
+          <a
+            class="text-light text-decoration-none"
+            href="https://harisljubovic.com/"
+            >harisljubovic.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- ******FOOTER END****** -->
 
     <script src="./script.js"></script>
     <script
