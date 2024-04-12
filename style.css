@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -7,20 +9,22 @@ body {
     margin: 0 auto;
 }
 
-
-
 .borderBottomBlue {
     border-bottom: 1px solid #8edcf0;
 }
+
 .borderBottomWhite {
     border-bottom: 1px solid #ffffff;
 }
 
-.textJustify {
-    text-align: center;
-    word-spacing: 2px;
+.linkOnHover:hover{
+    border-bottom: 1px solid #8edcf0;
 }
 
+#oMeni, #kontakt, #projekti{
+    height: max-content;
+    padding-top: 100px;
+}
 
 /* NAVIGATION */
 
@@ -33,24 +37,12 @@ body {
 .navBarScroll {
     background-color: #212222;
     z-index: 1;
-    
-}
-
-.navimg {
-    animation: myAnim 3s ease 0s infinite normal forwards;
 }
 
 .navLink {
     width: max-content;
     margin: 0 auto;
     font-size: 1.3rem;
-}
-
-
-
-.linkOnHover:hover{
-    border-bottom: 1px solid #8edcf0;
-   
 }
 
 .navButton{
@@ -60,40 +52,7 @@ body {
 .toggleIcon {
     font-size: 40px;
     color: #ffffff;
-    
 }
-
-.dropMenu {
-    background-color: #212222;
-    border: none;
-}
-
-
-.dropMenu a {
-    color: white;
-    text-align: center;
-    
-}
-
-.dropOmeniBg{
-    background-color: #212222;
-    border: none;
-}
-
-.dropOmeniList:hover {
-    background-color: #464747;
-    
-}
-
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    z-index: 1;
-}
-
-
 
 /* HERO SECTION */
 
@@ -109,46 +68,30 @@ body {
     align-items: center;
     padding: 0 25px 0 25px;
     user-select: none;
-    
 }
 
 .dobrodosli {
     font-size: 10rem;
     animation: dobrodosli 3.5s ease 0s 1 normal forwards;
-    
 }
 
 .heroText {
     font-size: 4rem;
-    
 }
 
-
-
-
-/* MAIN PAGE SEC */
-
-
-
-#oMeni, #kontakt{
-    height: max-content;
-    padding-top: 100px;
-}
+/* O MENI STYLING */
 
 .headingOMeni {
     font-size: 3rem;
     width: 50%;
-    
 }
 
 .oMeniHeadImg {
     width: 30%;
-    
 }
 
 .ulListStyle {
     font-size: 1rem;
-    
 }
 
 .listStyle {
@@ -160,23 +103,16 @@ body {
     color: white;
 }
 
-#projekti {
-    height: 100vh;
-    overflow-y: scroll;
-    scrollbar-color: #8edcf0 #303131;
-    scrollbar-width:auto;
-}
-
-
 .oMeniCard {
     background-color: #303131;
     width: 25rem;
     border-radius: 10px;
 }
 
+/* PROJEKTI STYLING */
+
 .projektiHeading {
     font-size: 2.5rem;
-    
 }
 
 .projektiContent{
@@ -207,15 +143,11 @@ body {
     padding-bottom: 72px;
 }
 
-
-
-
+/* BLOG STYLING */
 
 #blog {
     padding-top: 100px;
 }
-
-
 
 .blogImg {
     width: 40%;
@@ -225,7 +157,6 @@ body {
 .blogHeading {
     font-size: 1.4rem;
 }
-
 
 .blogCard {
     background-color: #303131;
@@ -240,7 +171,7 @@ body {
     text-decoration: none;
 }
 
-.pročitajCijeliČlanak {
+.readMoreBlog {
     font-style: italic;
     color: #8edcf0;
 }
@@ -268,37 +199,40 @@ body {
 
 .blogContentImgSize {
     width: 300px;
-    
 }
 
 .blogContentImgBorderRadius {
     border-radius: 50%;
 }
 
+/* KONTAKT STYLING */
+
 .contactIntro {
     font-size: 1.5rem;
-    
 }
 
 .socialMediaImg {
     width: 180px;
-    
 }
 
 .socialMediaImg:hover {
     transform: scale(1.1);
     transition: 500ms ease;
-    
 }
 
 .form-control:focus {
-    
     border: 2px solid rgb(142, 220, 240) !important;
     box-shadow: inset 0px 1px 1px rgb(142, 220, 240), 0 0 4px rgb(142, 220, 240) !important;
   }
 
   footer {
     background-color: #303131;
+  }
+
+  .footerBlogSection {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
   }
 
   form {
@@ -319,8 +253,6 @@ body {
         font-size: 4rem;
     }
 
-    
-
     .headingOMeni{
         font-size: 3rem;
     }
@@ -339,8 +271,6 @@ body {
     .heroText {
         font-size: 3rem;
     }
-
-    
 
     .headingOMeni{
         font-size: 2rem;
@@ -369,9 +299,9 @@ body {
 
 @media (max-width: 767.98px) {
 
-   .bgNav, .navbar {
-    background-color: #212222;
-   }
+    .bgNav, .navbar {
+        background-color: #212222;
+    }
 
     .linkOnHover{
         border-bottom: 1px solid #ffffff;
@@ -381,11 +311,12 @@ body {
     #hero-section{
         flex-wrap: wrap;
         justify-content: space-around;
-        
         }
+
     .quoteLine {
         font-size: 1rem
         }
+
     .dobrodosli {
         font-size: 4.5rem;
         }
@@ -409,15 +340,14 @@ body {
 @media (max-width: 575.98px) {
 
     .navLink {
-     
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
    
     #hero-section{
         background-position: right;
         height: 85vh;
-      
     }
+    
     .navItemPadd {
         padding-bottom: 10px;
     }
@@ -433,10 +363,10 @@ body {
     .modalHeading {
         font-size: 0.8rem;
     }
-    
-   
-   
 }
+
+/* ANIMATION KEYFRAMES */
+
 @keyframes dobrodosli {
 	0% {
 		opacity: 0;
